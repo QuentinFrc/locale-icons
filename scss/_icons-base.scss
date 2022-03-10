@@ -21,6 +21,11 @@
 	width: 1em;
 }
 
+.lcr {
+	@extend .lc;
+	border-radius: 0.1em;
+}
+
 @mixin locale-icon($locale) {
 	.lc-#{$locale} {
 		background-image: url(#{$locale-icons-path}#{$locale-icons-rect-path}/#{$locale}.svg);
